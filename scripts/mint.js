@@ -26,6 +26,7 @@ async function main() {
     0
   );
   await safeMintTx.wait();
+  console.log('safeMintTx hash: ', safeMintTx.hash);
   console.log(`Transaction URL of Mint: https://explorer-evm.testnet.swisstronik.com/tx/${safeMintTx.hash}`);
 }
 
